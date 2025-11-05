@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+html{
+    line-height: 1;
+    font-size: 65.2%;
+    font-family: sans-serif,Arial;
+    border: none;
+    background-image: url(cars/background.png);
+    background-size:100%;
+    background-position: bottom;
+
+}
+body{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.849);
+  height: 100vh;
+  padding: 1.5rem ;
+  
+}
+
+.game__bord{
+    background-color: #d83d3d;
+    width: 60rem;
+    height: 598.537px;
+    margin: 0 auto;
+    display: flex;
+    /* margin-top: 1.5rem; */
+    
+}
+.score__bord{
+    position: relative;
+    background-color: rgb(14, 13, 13);
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.score__text{
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  
+}
+.logo{
+    position: absolute;
+    top: -8.6rem;
+    right: -2.3rem;
+    border: none;
+    width: 20rem;
+}
+.score{
+    
+    font-size: 3.2rem;
+    padding-right: 5px;
+    border: 3px solid yellow;
+    border-radius: 8px;
+    color: #fff;
+    width: 90%;
+    height: 4rem;
+    box-shadow: 0 0 5px yellow;
+    margin-top: 30px;
+}
+.cars__selector{
+    border: 3px solid yellow;
+    width: 90%;
+    box-shadow: 0 0 5px yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+
+
+}
+.maincars{
+    width: 30px;
+    transform: rotate(90deg);
+    border: none;
+    
+    
+}
+.maincars:hover{
+    border: none;
+    background-color: beige;
+    border-radius: 5px;
+
+}
+.edges{
+    background-image: url(cars/road.jpg);
+    background-size:contain ;
+    background-color: rgb(104, 240, 104);
+    height: 100%;
+    width: 2.5rem;
+}
+.road{
+    flex-grow: 1;
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+
+    
+}
+.road__line1{
+    background-color: #d4cbcb;
+    height: 200%;
+    width: 1.3rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position:absolute;
+    bottom: 0;
+    left: 33.33333%;
+    transform: translatex(-50%);
+}
+.line2{
+    left: 66.6666%;
+    transform: translatex(-50%);
+    
+}
+.line__break{
+    transform: translatex(-.6px);
+    height: 3rem;
+    width: 120%;
+    border: none;
+    background-color: gray;
+}
+.car{
+    
+    border: none;
+    position: absolute;
+    filter:drop-shadow(0px 0px 10px rgb(221, 210, 210));
+    left: 160px;
+    bottom: 1rem;
+    width: 6rem;
+    z-index: 1000;
+    transition: rotate .2s;
+    transform-origin: bottom;
+    border-radius: 30px;
+    height: 125.16px;
+    /* transform: skewX(10deg); */
+}
+.other__car,.other__car2{
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    filter:drop-shadow(0px 0px 5px rgb(187, 178, 178));
+    left: 300px;
+    bottom: 598.537px;
+    width: 6rem;
+    z-index: 999;
+}
+.other__car2{
+    left: 100px;
+}
+.gameover{
+    color: rgb(107, 14, 14);
+    font-weight: bolder;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    border: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(56, 54, 54, 0.726);
+    z-index: 1010;
+    transition: all .3s;
+    font-size: 50px;
+}
+.rebtn{
+    font-size: 25px;
+    width: 150px;
+    height:38px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+    font-weight: 600;
+    cursor: pointer;
+  
+}
+.rebtn:hover{
+    background-color: rgb(255, 255, 255);
+    
+}
+.fire{
+    border: none;
+    position: absolute;
+    bottom: 30px;
+    height: 250px;
+    width: 200px;
+    z-index: 1001;
+    transition: all /2s;
+    display: none;
+}
+

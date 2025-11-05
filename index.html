@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game__bord">
+        <div class="edges"></div>
+        <div class="road">
+            <div class="gameover">
+                <button onclick="gameStart()" class="rebtn">Restart</button>
+            </div>
+            <img src="cars/fire.gif"  class="fire">
+            <img style="width:6rem; left:160px;" src="cars/maincar.png" alt="" class="car">
+            <img style="width:6rem; bottom: 598.537px; left:300px;" src="cars/car1.png" alt="carphot" class="other__car">
+            <img style="width:6rem; bottom: 798.537px; left:100px;" src="cars/car2.png" alt="carphot" class="other__car2">
+            <div class="road__line1">
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+            </div>
+            <div class="road__line1 line2">
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+                <div class="line__break"></div>
+            </div>
+        </div>
+        <div class="edges"></div>
+        <div class="score__bord">
+            <img src="cars/logo.png" alt="logo" class="logo">
+            <h2 class="score__text">Score</h2>
+            <h2 class="score" dir="rtl">0</h2>
+            <div class="cars__selector">
+                <img src="cars/maincar.png" alt="" class="maincars">
+                <img src="cars/maincar1.png" alt="" class="maincars">
+                <img src="cars/maincar2.png" alt="" class="maincars">
+                <img src="cars/maincar3.png" alt="" class="maincars">
+                <img src="cars/maincar4.png" alt="" class="maincars">
+                <img src="cars/maincar5.png" alt="" class="maincars">
+            </div>
+        </div>
+        <audio src="sounds/crash.mp3" class="crash__sounds"></audio>
+        <audio src="sounds/sidecrash.mp3" class="sidecrash__sounds"></audio>
+        <audio src="sounds/draft.mp3" class="dreft__sounds"></audio>
+        <audio src="sounds/normallspeed.mp3" loop class="normall__sounds"></audio>
+        <audio src="sounds/highspeed.mp3" loop class="high__sounds"></audio>
+        <audio src="sounds/fire.mp3" loop class="fire__sounds"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
