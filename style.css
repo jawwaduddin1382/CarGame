@@ -9,7 +9,7 @@ html{
     font-size: 65.2%;
     font-family: sans-serif,Arial;
     border: none;
-    background-image: url(cars/background.png);
+    background-image: url(cars/background\ .png);
     background-size:100%;
     background-position: bottom;
 
@@ -37,7 +37,7 @@ body{
     width: 18rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     overflow: hidden;
 }
@@ -47,7 +47,7 @@ body{
     padding: 1rem;
     font-size: 2.5rem;
     letter-spacing: 3px;
-  
+    ;
 }
 .logo{
     position: absolute;
@@ -58,15 +58,27 @@ body{
 }
 .score{
     
-    font-size: 3.2rem;
-    padding-right: 5px;
     border: 3px solid yellow;
     border-radius: 8px;
     color: #fff;
     width: 90%;
     height: 4rem;
     box-shadow: 0 0 5px yellow;
+   font-size: 34px;
+}
+.key{
+    
+    font-size: 3.2rem;
+    padding-right: 5px;
+    border: 3px solid yellow;
+    border-radius: 8px;
+    color: #fff;
+    width: 75%;
+    height: 6rem;
+    box-shadow: 0 0 5px yellow;
     margin-top: 30px;
+    margin-bottom: 10px;
+
 }
 .cars__selector{
     border: 3px solid yellow;
